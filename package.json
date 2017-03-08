@@ -1,6 +1,6 @@
 {
   "name": "parse-access-token",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Parse access token from request",
   "main": "dist/index.js",
   "module": "dist/es6/index.js",
@@ -20,5 +20,7 @@
     "build:es5": "tsc src/index.ts --target es5 --module CommonJS --outDir dist",
     "build:es6": "tsc src/index.ts --target es6 --outDir dist/es6"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
