@@ -1,0 +1,24 @@
+{
+  "name": "parse-access-token",
+  "version": "0.1.0",
+  "description": "Parse access token from request",
+  "main": "dist/index.js",
+  "module": "dist/es6/index.js",
+  "repository": "git@github.com:janneh/parse-access-token.git",
+  "author": "janneh",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/tape": "^4.2.29",
+    "faucet": "^0.0.1",
+    "tape": "^4.6.3",
+    "ts-node": "^2.1.0",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape src/index.test.ts | faucet",
+    "build": "rm -rf ./dist && npm run build:es5 && npm run build:es6",
+    "build:es5": "tsc src/index.ts --target es5 --module CommonJS --outDir dist",
+    "build:es6": "tsc src/index.ts --target es6 --outDir dist/es6"
+  },
+  "files": ["dist"]
+}
