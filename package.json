@@ -1,6 +1,6 @@
 {
   "name": "parse-access-token",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parse access token from request",
   "main": "dist/index.js",
   "module": "dist/es6/index.js",
