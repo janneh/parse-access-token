@@ -18,7 +18,11 @@ to parse token from headers, query or body respectively and a function as defaul
 and throws an error if found in more than one of them. All functions return the access token if found, else `undefined`.
 Note that the access token is not verified, just parsed form the request.
 
-ES6 module available at `parse-access-token/es6` and commonjs ES5 at `parse-access-token`
+ES6 module available at `parse-access-token/es6` and commonjs ES5 at `parse-access-token`. Note: using `require` the default export is accessible as `default`:
+
+```js
+const parseToken = require("parse-access-token").default
+```
 
 Works on an express, koa or hapi request object.
 
