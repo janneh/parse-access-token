@@ -4,6 +4,7 @@
   "description": "Parse access token from request",
   "main": "dist/index.js",
   "module": "dist/es6/index.js",
+  "types": "index.d.ts",
   "repository": "git@github.com:janneh/parse-access-token.git",
   "author": "janneh",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "build:es6": "tsc src/index.ts --target es6 --outDir dist/es6"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ]
 }
